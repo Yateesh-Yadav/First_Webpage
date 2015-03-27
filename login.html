@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function submitfunction()
+{
+var x=document.forms["myform"]["username"].value;
+var y=document.forms["myform"]["pwd"].value;
+if(x==null||x==""||y==null||y=="")
+{
+alert("Enter Username and Password");
+}
+else{
+if(x=="Yateesh")
+{
+if(y=="15121992")
+{
+alert("Welcome to Online Shopping Store");
+}
+else{
+alert("Invalid Password");
+}
+}
+else{
+alert("Invalid Username");
+}
+}
+}
+</script>
+</head>
+<body bgcolor="#F0F8FF" background="gb.jpg" text="white">
+<br><br><br><br><br><br><br><br><br><br><form align="middle" name="myform" onsubmit="submitfunction()">
+<b>Username</b><br><input type="text" name="username"size="20"><br><br>
+<b>Password</b><br><input type="password" name="pwd" size="20" maxlenth="8"><br><br>
+<input type="submit" name="submit "value="SIGN IN">
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><img src="fk.jpg" align="right">
+</body>
+</html>

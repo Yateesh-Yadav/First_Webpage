@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>  
+<meta charset="utf-8">  
+<title>JavaScript Form Validation using a sample registration form</title>  
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />  
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />  
+<script src="sample-registration-form-validation.js"></script>  
+</head>  
+<body onload="document.registration.userid.focus();" bgcolor="CCCCCC">  
+<img src="m.jpg" alt="m" align="right">
+<h1>Registration Form</h1>  
+<p>Use tab keys to move from one input field to the next.</p>  
+<form name='registration' onSubmit="return formValidation();">  
+<ul>  
+<li><label for="username">Name:</label></li>  
+<li><input type="text" name="firstname" size="20" value="First Name" /></li> 
+<li><input type="text" name="lastname" size="20" value="Last Name"></li>
+
+<li><label for="userid">Username:</label></li>  
+<li><input type="text" name="userid" size="12" /></li>  
+
+<li><label for="passid">Password:</label></li>  
+<li><input type="password" name="passid" size="12" /></li>
+
+<li><label id="gender">Sex:</label></li>  
+<li><input type="radio" name="sex" value="Male" /><span>Male</span></li>  
+<li><input type="radio" name="sex" value="Female" /><span>Female</span></li>
+<li><input type="radio" name="sex" value="Other" /><span>Other</span></li>
+   
+<li><label for="date of birth">Date of Birth:</label></li>
+<li><select name="days" size="1"><option selected>Day<option>1<option>2<option>3<option>4<option>5<option>6<option>7<option>8<option>9<option>10<option>11<option>12<option>13<option>14<option>15<option>16<option>17<option>18<option>19<option>20<option>21<option>22<option>23<option>24<option>25<option>26<option>27<option>28<option>29<option>30<option>31</select></li>
+<li><select name="months" size="1"><option selected>Month<option>Jan<option>Feb<option>Mar<option>Apr<option>May<option>Jun<option>Jul<option>Aug<option>Sep<option>Oct<option>Nov<option>Dec</select></li>
+<li><select name="years" size="1"><option selected>Year<option>1960<option>1961<option>1962<option>1963<option>1964<option>1965<option>1966<option>1967<option>1968<option>1969<option>1970<option>1971<option>1972<option>1973<option>1974<option>1975<option>1976<option>1977<option>1978<option>1979<option>1980<option>1981<option>1982<option>1983<option>1984<option>1985<option>1986<option>1987<option>1988<option>1989<option>1990<option>1991<option>1992<option>1993<option>1994<option>1995<option>1996<option>1997<option>1998<option>1999<option>2000<option>2001<option>2002<option>2003<option>2004<option>2005<option>2006<option>2007<option>2008<option>2009<option>2010<option>2011<option>2012<option>2013<option>2014<option>2015</select></li>
+
+<li><label for="mobile">Mobile NO:</label></li>
+<li><input type="text" name="mobile" size="1" value="+91" /><input type="text" name="mobile" maxlength="10" /></li>  
+
+<li><label for="address">Address:</label></li>   
+<li><input type="text" name="address" size="40" /></li>
+
+<li><label for="city">City:</label></li>   
+<li><input type="text" name="city" size="10" /></li>
+ 
+<li><label for="country">Country:</label></li>  
+<li><select name="country" size="1"> 
+<option selected="" value="Default">(Please select a country)<option>Afghanistan<option>Albania<option>Algeria<option>Australia<option>Bermuda<option>
+Brazil<option>Bulgaria<option>Canada<option>China<option>Colombia<option>Cuba<option>Denmark<option>Egypt<option>France<option>Germany<option>Greece
+<option>Hong Kong<option>Iceland<option>India<option>Indonesia<option>Iran<option>Ireland<option>Jamaica<option>Japan<option>Kenya<option>Kuwait
+<option>Malaysia<option>Mexico<option>Nepal<option>Netherlands<option>New Zealand<option>Nigeria<option>Pakistan<option>Portugal<option>Russia
+<option>Singapore<option>South Africa<option>Spain<option>Sri Lanka<option>Sweden<option>Taiwan<option>Thailand<option>Turkey<option>Ukarine
+<option>United Kingdom<option>United States<option>Venezuela<option>Yemen<option>Zimbabwe
+</select></li>
+
+<li><label for="zip">ZIP Code:</label></li>  
+<li><input type="text" name="zip" size="6" /></li> 
+
+<li><label>Language:</label></li>  
+<li><input type="checkbox" name="hd" value="hd" checked /><span>Hindi</span></li>  
+<li><input type="checkbox" name="en" value="en" /><span>English</span></li>  
+
+<li><label for="desc">About:</label></li>  
+<li><textarea name="desc" id="desc"></textarea></li>  
+
+<li><label for="policy"></label></li>  
+<li><input type="checkbox"><span>I agree to the funkykart.com Terms of Service and Privacy Policy.</span></li>
+<li><input type="submit" name="submit" value="Submit" /></li>  
+</ul>  
+</form>  
+</body>  
+</html>  

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>funkykart.com</title>
+<script>
+function submitfunction()
+{
+var x=document.forms["myform"]["search"].value;
+if(x==""){
+alert("Type something to search");
+}
+else{
+alert("Searching..........");
+}
+}
+</script>
+</head>
+
+<body bgcolor="#F0F8FF" text="black" link="pink" vlink="black" alink="red">
+
+  <img src="okm.jpg" align="left"><br><br>
+  
+ <form  align="middle" name="myform" onsubmit="submitfunction()">
+ <input type="text" name="search" size="90">
+ <input type="Submit" value="Search">  
+ </form>
+
+  <a href="registration/reg.html"><img src="clk.jpg" align="right"></a>
+  <a href="login.html"><img src="in.jpg" align="right"></a>
+  <br><br>
+Follow us on:<br>
+<a href="http://twitter.com">
+  <img src="tw.gif" alt="tw website" align="left" style="width=50px;height=50px;border:1">
+  </a>  
+<a href="http://facebook.com">
+  <img src="gh.gif" alt="gh website" align="left" style="width=50px;height=50px;border:0">
+  </a><br>
+<marquee><h1>Welcome to funkykart Online Shopping</h1></marquee>
+<table border="1" align="left"> <tr> <td width="400"><a href="clothing.html" underline="0">CLOTHING</a> </td> </tr> </table>
+<table border="1" align="right"> <tr> <td width="400">MOVIES</td> </tr> </table>
+<br><br><br>
+<img align="left" src="images.jpg" alt="rotating image" width="400" height="300" id="rotator">
+<img align="right" src="image1.jpg" alt="rotating image" width="400" height="300" id="move">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<table border="1" align="left"><tr><td width="400">ELECTRONICS</td></tr></table>
+<table border="1" align="right"><tr><td width="400">BOOKS</td></tr></table>
+<br><br><br>
+<img align="right" src="image2.jpg" alt="rotating image" width="400" height="300" id="see">
+<img align="left" src="image3.jpg" alt="rotating image" width="400" height="300" id="grab">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<marquee><img src="off.jpg" alt="offer"></marquee>
+
+<script type="text/javascript">
+(function(){
+var rotator = document.getElementById('rotator');
+var imageDir = 'clothing/';
+var delayInSeconds = 2;
+var clothing = ['11.jpg', '10.jpg', '9.jpg', '8.jpg', '7.jpg', '6.jpg', '5.jpg', '4.jpg', '3.jpg', '2.jpg', '1.jpg'];
+var num = 0;
+var changeImage = function(){
+var len = clothing.length;
+rotator.src = imageDir + clothing[num++];
+if (num == len){
+num = 0;
+}
+};
+setInterval(changeImage, delayInSeconds * 1000);
+})();
+</script>
+
+<script type="text/javascript">
+(function(){
+var rotator = document.getElementById('move');
+var imageDir = 'movies/';
+var delayInSeconds = 2;
+var movies = ['11.jpg', '10.jpg', '9.jpg', '8.jpg', '7.jpg', '6.jpg', '5.jpg', '4.jpg', '3.jpg', '2.jpg', '1.jpg'];
+var num = 0;
+var changeImage = function(){
+var len = movies.length;
+rotator.src = imageDir + movies[num++];
+if (num == len){
+num = 0;
+}
+};
+setInterval(changeImage, delayInSeconds * 1000);
+})();
+</script>
+
+<script type="text/javascript">
+(function(){
+var rotator = document.getElementById('see');
+var imageDir = 'books/';
+var delayInSeconds = 2;
+var books = ['11.jpg', '10.jpg', '9.jpg', '8.jpg', '7.jpg', '6.jpg', '5.jpg', '4.jpg', '3.jpg', '2.jpg', '1.jpg'];
+var num = 0;
+var changeImage = function(){
+var len = books.length;
+rotator.src = imageDir + books[num++];
+if (num == len){
+num = 0;
+}
+};
+setInterval(changeImage, delayInSeconds * 1000);
+})();
+</script>
+
+<script type="text/javascript">
+(function(){
+var rotator = document.getElementById('grab');
+var imageDir = 'electronics/';
+var delayInSeconds = 2;
+var electronics = ['11.jpg', '10.jpg', '9.jpg', '8.jpg', '7.jpg', '6.jpg', '5.jpg', '4.jpg', '3.jpg', '2.jpg', '1.jpg'];
+var num = 0;
+var changeImage = function(){
+var len = electronics.length;
+rotator.src = imageDir + electronics[num++];
+if (num == len){
+num = 0;
+}
+};
+setInterval(changeImage, delayInSeconds * 1000);
+})();
+</script>
+</body>
+</html>
